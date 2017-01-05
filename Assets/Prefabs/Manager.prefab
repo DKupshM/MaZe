@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000010020114378}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010020114378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000014281758966}
+  - 114: {fileID: 114000012591643710}
+  - 114: {fileID: 114000013789065942}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &4000014281758966
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010020114378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114000012591643710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010020114378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2628bee7f6548b6bc6841b3d2edd47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mazeConfig:
+    mazeGen: {fileID: 0}
+    height: 101
+    width: 101
+    seed: 1
+    genSeed: 1
+  sceneConfig:
+    target: {fileID: 0}
+    startingPositions: {fileID: 0}
+    terrain: {fileID: 0}
+    border: 20
+  aiConfig:
+    graph: {fileID: 0}
+    aiBorder: 20
+  ballConfig:
+    colors:
+    - {r: 1, g: 0, b: 0, a: 1}
+    - {r: 0, g: 0, b: 1, a: 1}
+    - {r: 1, g: 0, b: 1, a: 1}
+    - {r: 0, g: 1, b: 1, a: 1}
+    - {r: 0, g: 1, b: 0, a: 1}
+    aiBall: {fileID: 161100, guid: 52ad485257bb5418d8c7a1187e55209f, type: 2}
+    playerBall: {fileID: 183076, guid: fb88192ab18344bf285f8ab744f70ba2, type: 2}
+    usePlayer: 0
+    ballCount: 10
+  runOnStart: 1
+--- !u!114 &114000013789065942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010020114378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 249
+    i1: 78
+    i2: 222
+    i3: 77
+    i4: 184
+    i5: 68
+    i6: 180
+    i7: 46
+    i8: 202
+    i9: 0
+    i10: 191
+    i11: 59
+    i12: 77
+    i13: 245
+    i14: 147
+    i15: 217
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
